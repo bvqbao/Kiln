@@ -704,12 +704,13 @@
           id="base_url"
           label="Base URL"
           bind:value={new_provider_base_url}
-          placeholder="https://..."
+          placeholder="https://.../v1"
           info_description="The base URL of an OpenAI compatible API. For example, https://openrouter.ai/api/v1"
         />
         <FormElement
           id="api_key"
           label="API Key"
+          optional={true}
           bind:value={new_provider_api_key}
           placeholder="sk-..."
           info_description="The API key for the OpenAI compatible API."
